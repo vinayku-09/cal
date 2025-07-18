@@ -1,0 +1,58 @@
+button{
+    height:100px;
+    width: 100px;
+    border-radius: 50px;
+    border:none;
+    background-color: black;
+    color:white;
+    font-size: 3rem;
+  cursor: pointer;
+
+}
+#calcultor{
+    width:500px;
+    height: 750px;
+    background-color:skyblue;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#display{
+    width: 400px;
+    height: 100px;
+    background-color:lightgray;
+    font-size: 3rem;
+    text-align: right;
+    padding-right: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+button:hover{
+    background-color: darkgray;
+    color: black;
+}
+button:active{
+    background-color: gray;
+    color:white
+}
+#key{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px
+}
+#operator-add, #operator-subtract, #operator-multiply, #operator-divide,  #operator-clear {
+    background-color: orange;
+    color: white;
+}
+#operator-equals {
+    background-color:red;
+    color: white;
+}
+#operator-equals:hover, #operator-clear:hover {
+    background-color: darkred;
+    color: white;
+}
+#operator-add:hover, #operator-subtract:hover, #operator-multiply:hover, #operator-divide:hover {
+    background-color: darkorange;
+}
